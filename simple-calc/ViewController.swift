@@ -15,7 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    //text field
+    //display all calculations leading to result
+    @IBOutlet weak var trackOp: UITextField!
+    //result text field
     @IBOutlet weak var display: UITextField!
     var operations = ["/", "*", "-", "+", "%", "count", "avg", "fact"]
     
@@ -29,6 +31,7 @@ class ViewController: UIViewController {
         }else {
          display.text = display.text! +  value
         }
+        trackOp.text = trackOp.text! + value
     }
     
     //after "=" is pressed
@@ -72,6 +75,7 @@ class ViewController: UIViewController {
     @IBAction func clear(_ sender: UIButton) {
         calculation.removeAll()
         display.text = ""
+        trackOp.text = ""
     }
     
     //caclulate average

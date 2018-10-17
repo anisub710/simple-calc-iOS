@@ -244,16 +244,24 @@
                                     <action selector="input:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sg2-Ej-SUY"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" id="NGf-hD-NoX">
+                                <rect key="frame" x="189" y="171" width="184" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="display" destination="5W6-fl-eyn" id="WQL-5M-WVw"/>
+                        <outlet property="trackOp" destination="NGf-hD-NoX" id="UEj-FX-pGa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1.5" y="29.5"/>
+            <point key="canvasLocation" x="-2.3999999999999999" y="29.23538230884558"/>
         </scene>
     </scenes>
 </document>
