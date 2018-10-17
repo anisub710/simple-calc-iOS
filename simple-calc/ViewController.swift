@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         }else {
          display.text = display.text! +  value
         }
-        trackOp.text = trackOp.text! + value
+        trackOp.text = trackOp.text! + " " + value
     }
     
     //after "=" is pressed
@@ -89,11 +89,11 @@ class ViewController: UIViewController {
     
     //caclulate factorial
     func fact(_ i:String) -> Double {
-        let num = Int(i)! //not doing for decimals
+        let num = Double(i)! //not doing for decimals
         var result:Double = 1
         if (num > 0) {
-            for j in 1...num {
-                result *= Double(j)
+            for j in stride(from: 1.0, to: num + 1, by: 1.0) {
+                result *= j
             }
         }else if (num < 0){
             result = 0
